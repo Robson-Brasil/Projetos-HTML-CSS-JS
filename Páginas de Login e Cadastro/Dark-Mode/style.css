@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #dbefff;
+  overflow: hidden;
+  transition: background 0.5s;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 20px 15px;
+  transition: background 0.5s;
+}
+
+.img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+}
+.text {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.text h1 {
+  color: #0088d2;
+}
+.text p {
+  font-size: 16px;
+  color: #808080;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 15px;
+  background: #0088d2;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #dbefff;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.btn:hover {
+  background: #04a1f5;
+  color: #fff;
+}
+.icon {
+  width: 10;
+  height: 10;
+  border-radius: 25%;
+  background-color: #dbefff;
+  position: absolute;
+  top: 29%;
+  right: 39%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon::before {
+  content: "\f186";
+  font-family: fontAwesome;
+  color: #0088d2;
+  font-size: 20px;
+}
+
+/*Aqui começar o dark mode*/
+
+.header.dark {
+  background: #202026;
+}
+
+.header.dark .icon::before {
+  content: "\f185";
+}
+.header.dark .container {
+  background: #323840;
+}
+.header.dark .text p {
+  color: #fff;
+}
