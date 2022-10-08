@@ -9,7 +9,7 @@
 
 body {
   font-size: 100%;
-  background: linear-gradient(68.15deg, #0079a1 16.62%, #012b3d 85.61%);
+  background: linear-gradient(35deg, #0079a1 35%, #012b3d 70%);
 }
 
 .cabecalho {
@@ -69,20 +69,20 @@ body {
 }
 
 .conteudo-principal-escrito-botao {
-  background-color: #ecd6c4;
+  background-color: #00ffff;
   width: 180px;
   height: 60px;
   border: none;
-  box-shadow: 4px 5px 4px #01b1f7e1;
+  box-shadow: 4px 5px 4px #f70101e1;
   border-radius: 20px;
   font-family: "Sarala", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #00212a;
+  color: #000000;
 }
 
 .conteudo-principal-escrito-botao:hover {
-  background-color: rgba(0, 160, 149, 0.317);
+  background-color: rgb(1, 73, 70);
 }
 
 .conteudo-principal-imagem {
@@ -120,7 +120,7 @@ body {
 }
 
 .rodape-imagem {
-  height: 80px;
+  height: 100px;
   display: block;
   margin: 0 auto;
 }
