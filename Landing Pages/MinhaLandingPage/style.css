@@ -69,20 +69,20 @@ body {
 }
 
 .conteudo-principal-escrito-botao {
-  background-color: #00ffff;
+  background-color: #ffffff;
   width: 180px;
   height: 60px;
   border: none;
-  box-shadow: 4px 5px 4px #f70101e1;
+  box-shadow: 4px 5px 4px #0d01f7;
   border-radius: 20px;
   font-family: "Sarala", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #000000;
+  color: #ff0202;
 }
 
 .conteudo-principal-escrito-botao:hover {
-  background-color: rgb(1, 73, 70);
+  background-color: rgb(1, 255, 255);
 }
 
 .conteudo-principal-imagem {
