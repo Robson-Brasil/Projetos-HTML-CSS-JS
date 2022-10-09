@@ -9,7 +9,7 @@
 
 body {
   font-size: 100%;
-  background: linear-gradient(35deg, #0079a1 35%, #012b3d 70%);
+  background: linear-gradient(45deg, #0097c9 35%, #014562 80%);
 }
 
 .cabecalho {
@@ -38,7 +38,7 @@ body {
 
 .conteudo {
   margin-bottom: 48px;
-  border-top: 0.4px solid #000000;
+  border-top: 0.4px solid #ffffff;
 }
 
 .conteudo-principal {
@@ -52,11 +52,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 .conteudo-principal-escrito-titulo {
   font-family: "Righteous", cursive;
   font-weight: 400;
+  flex-direction: space-around;
+  align-items: center;
   font-size: 64px;
   color: #ffffff;
 }
@@ -64,25 +68,9 @@ body {
 .conteudo-principal-escrito-subtitulo {
   font-family: "Sarala", sans-serif;
   font-weight: 400;
+  align-items: normal;
   font-size: 24px;
   color: #ffffff;
-}
-
-.conteudo-principal-escrito-botao {
-  background-color: #ffffff;
-  width: 180px;
-  height: 60px;
-  border: none;
-  box-shadow: 4px 5px 4px #0d01f7;
-  border-radius: 20px;
-  font-family: "Sarala", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  color: #ff0202;
-}
-
-.conteudo-principal-escrito-botao:hover {
-  background-color: rgb(1, 255, 255);
 }
 
 .conteudo-principal-imagem {
