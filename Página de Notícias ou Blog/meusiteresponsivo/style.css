@@ -66,7 +66,7 @@ header .button-get-coffee {
   height: 3.7rem;
   font-family: "manrope", sans-serif;
   background-color: transparent;
-  border: 0.1rem solid #8257e5;
+  border: 0.1rem solid #03bffe;
   border-radius: 0.6rem;
   color: #fff;
   font-weight: 800;
@@ -81,7 +81,7 @@ header .button-get-coffee {
 }
 
 .button-get-coffee:hover {
-  background-color: #8257e5;
+  background-color: #05e1f0;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -195,7 +195,7 @@ main .button-mobile {
   .menu.open a:focus {
     color: #fff;
     opacity: 100%;
-    border-left: 5px solid #8257e5;
+    border-left: 5px solid #01ebfc;
     padding-left: 3rem;
   }
 
@@ -256,13 +256,13 @@ main .button-mobile {
     font-size: 1.1rem;
     text-transform: uppercase;
     background-color: transparent;
-    border: 0.1rem solid #8257e5;
+    border: 0.1rem solid #01a0fd;
     border-radius: 0.6rem;
     margin-top: 2%;
   }
 
   main .button-mobile:focus {
-    background-color: #8257e5;
+    background-color: #00aaff;
     transition: 0.3s;
   }
 
