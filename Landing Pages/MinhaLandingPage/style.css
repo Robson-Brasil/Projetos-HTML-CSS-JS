@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  width: 100%;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -124,4 +123,78 @@ body {
   height: 100px;
   display: block;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  /*Navegação*/
+
+  .cabecalho {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .cabecalho {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  /*Cabeçalho*/
+
+  .cabecalho-menu {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+  }
+
+  /*Sobre*/
+
+  #sobre {
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+  }
+
+  #serviços {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #serviços h2 {
+    text-align: center;
+    width: 100%;
+  }
+  #serviços div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+  }
+
+  /*Fotos*/
+
+  #fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #fotos h2 {
+    width: 100%;
+    text-align: center;
+  }
+  #fotos img {
+    width: 33.333%;
+  }
+
+  /*Contato*/
+  #contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #contato h2,
+  #contato p {
+    width: 100%;
+  }
 }
