@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 10px each rem */
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "manrope", sans-serif;
+  background-color: #000;
+}
+
+body {
+  padding-top: 5rem;
+  background: url(./assets/img-coffee.svg), url(./assets/blur-1.png),
+    url(./assets/blur-2.png);
+  background-repeat: no-repeat;
+  background-position: bottom center, bottom left, top right;
+  background-attachment: fixed;
+  background-size: 30%, 60%, 40%;
+  overflow: hidden;
+}
+
+/* HEADER */
+header {
+  padding-left: 132px;
+}
+
+header .container {
+  width: 90%;
+  max-width: 918px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo-mobile {
+  display: none;
+}
+
+header .menu-mobile {
+  display: none;
+}
+
+header ul {
+  display: flex;
+}
+
+header li a {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-inline: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .button-get-coffee {
+  width: 17.2rem;
+  height: 3.7rem;
+  font-family: "manrope", sans-serif;
+  background-color: transparent;
+  border: 0.1rem solid #8257e5;
+  border-radius: 0.6rem;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu a:hover {
+  opacity: 80%;
+  transition: 0.3s;
+}
+
+.button-get-coffee:hover {
+  background-color: #8257e5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 3rem auto;
+}
+
+main h1 {
+  display: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 3rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main .coffee-text {
+  max-width: 558px;
+}
+
+main .text-mobile {
+  display: none;
+}
+main .button-mobile {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 427px) {
+  main h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    padding-top: 3.7rem;
+    background: url(./assets/img-coffee.svg), url(./assets/blur-mobile.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, bottom center;
+    background-attachment: fixed, fixed;
+    background-size: 55%, 100vw 60%;
+  }
+
+  header {
+    padding-left: 0;
+  }
+
+  header .container {
+    width: 88%;
+  }
+
+  header .logo-desktop {
+    display: none;
+  }
+
+  header .logo-mobile {
+    display: flex;
+  }
+
+  /* menu */
+  header .menu {
+    display: block;
+    visibility: hidden;
+    width: 100vw;
+    height: 0px;
+    position: absolute;
+    top: 9.5rem;
+    left: 0;
+    background-color: #000;
+    z-index: 999;
+    transition: height 0.5s;
+    overflow-y: hidden;
+  }
+
+  /* Menu mobile open */
+  .menu.open {
+    height: calc(100vh - 9.5rem);
+    visibility: visible;
+  }
+
+  .menu.open ul {
+    display: block;
+    border-top: 1px solid #29292e;
+  }
+
+  .menu.open li {
+    height: 5.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0.7rem;
+    border-bottom: 1px solid #29292e;
+  }
+
+  .menu.open a {
+    width: 100vw;
+    height: 5.7rem;
+    display: flex;
+    align-items: center;
+    padding-left: 3.5rem;
+    color: #a8a8b3;
+    font-size: 1.8rem;
+  }
+
+  .menu.open a:focus {
+    color: #fff;
+    opacity: 100%;
+    border-left: 5px solid #8257e5;
+    padding-left: 3rem;
+  }
+
+  header .button-get-coffee {
+    display: none;
+  }
+
+  header .menu-mobile {
+    display: block;
+  }
+
+  header .burger-button {
+    width: 24px;
+    height: 8px;
+    margin-bottom: 0.6rem;
+    border: none;
+    background: url("./assets/menu-buguer-open.svg");
+    transition: 0.3s;
+  }
+
+  header .burger-button.close {
+    width: 18px;
+    height: 18px;
+    background: url("./assets/menu-buguer-close.svg");
+  }
+
+  body main {
+    width: 100vw;
+    height: 90vh;
+    justify-content: space-between;
+    margin: 2.5rem auto;
+    padding-top: 18%;
+    padding-bottom: 63%;
+    border-top: 1px solid #29292e;
+  }
+
+  main h1 {
+    display: block;
+  }
+
+  main .text-mobile {
+    width: 90%;
+    max-width: 800px;
+    display: block;
+    padding-inline: 4.7rem;
+    text-align: center;
+  }
+
+  main .button-mobile {
+    width: 17.4rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: "manrope", sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.1rem solid #8257e5;
+    border-radius: 0.6rem;
+    margin-top: 2%;
+  }
+
+  main .button-mobile:focus {
+    background-color: #8257e5;
+    transition: 0.3s;
+  }
+
+  button span {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .coffee-text {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-size: 50%, 60%, 40%;
+  }
+
+  header .container {
+    max-width: 1012px;
+  }
+
+  main .coffee-text {
+    max-width: 758px;
+  }
+}
