@@ -212,14 +212,14 @@ main .button-mobile {
     height: 8px;
     margin-bottom: 0.6rem;
     border: none;
-    background: url("./assets/menu-buguer-open.svg");
+    background: url("./assets/menu-burguer-open.svg");
     transition: 0.3s;
   }
 
   header .burger-button.close {
     width: 18px;
     height: 18px;
-    background: url("./assets/menu-buguer-close.svg");
+    background: url("./assets/menu-burguer-close.svg");
   }
 
   body main {
