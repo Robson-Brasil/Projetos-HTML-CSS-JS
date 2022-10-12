@@ -1,6 +1,6 @@
 var postsHtml = "";
 
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 30; i++) {
   var post = posts[i];
   var html =
     '<div class="swiper-slide">' +
