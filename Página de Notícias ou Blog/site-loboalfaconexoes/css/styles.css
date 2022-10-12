@@ -597,7 +597,7 @@ body {
 }
 
 .post__content {
-  background: #ffffff;
+  background: #080808;
   padding-bottom: 10px;
 }
 
@@ -808,7 +808,7 @@ body {
 }
 
 .footer__autor a {
-  color: #f65954;
+  color: #02afff;
 }
 
 .swiper-pagination {

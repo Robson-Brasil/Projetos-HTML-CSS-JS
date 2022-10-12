@@ -1,28 +1,29 @@
-.input-title{
+.input-title {
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 5px;
   display: block;
+  color: #ffffff;
 }
 
-.input-item__box{
-  border: 1px solid #FF4F4F;
+.input-item__box {
+  border: 1px solid #ff4f4f;
   background: #ffffff;
   padding: 13px 20px;
 }
 
 .input-item__textarea,
-.input-item__input{
+.input-item__input {
   width: 100%;
   border: none;
   outline: none;
 }
 
-.input-item__textarea{
+.input-item__textarea {
   resize: none;
   min-height: 178px;
 }
 
-.form-contact{
+.form-contact {
   padding-top: 60px;
 }

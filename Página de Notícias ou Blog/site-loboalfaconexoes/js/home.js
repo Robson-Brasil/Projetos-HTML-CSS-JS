@@ -1,6 +1,6 @@
 var postsHtml = "";
 
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < 12; i++) {
   var post = posts[i];
   var html =
     '<div class="swiper-slide">' +
@@ -39,7 +39,7 @@ var mySwiper = new Swiper(".swiper-container-testemunhas", {
 });
 
 var mySwiperPosts = new Swiper(".swiper-container-posts", {
-  slidesPerView: 3,
+  slidesPerView: 9,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination-posts",
@@ -51,6 +51,7 @@ var mySwiperPosts = new Swiper(".swiper-container-posts", {
       slidesPerView: 1,
       spaceBetween: 20,
     },
+
     // when window width is >= 480px
     768: {
       slidesPerView: 2,
@@ -59,6 +60,21 @@ var mySwiperPosts = new Swiper(".swiper-container-posts", {
     // when window width is >= 980px
     980: {
       slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    320: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
+    // when window width is >= 980px
+    980: {
+      slidesPerView: 6,
       spaceBetween: 30,
     },
   },

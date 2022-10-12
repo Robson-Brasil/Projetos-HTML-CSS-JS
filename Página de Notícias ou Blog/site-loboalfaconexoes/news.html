@@ -181,7 +181,7 @@
     var pageQuery = getUrlVars()["pagina"];
 
     var page = parseInt(pageQuery) || 1;
-    var limit = 6;
+    var limit = 20;
     var offset = (page - 1) * limit;
     var total = array.length;
     var items = array.slice(offset, offset + limit);
