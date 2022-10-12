@@ -105,10 +105,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-  background-color: #000;
-}
 ol,
 ul {
   list-style: none;
@@ -132,6 +128,7 @@ table {
 html,
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #000;
 }
 
 .tac {
