@@ -1,0 +1,37 @@
+.post-detail__img-box{
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.post-detail__img-box img{
+  display: block;
+}
+
+.post__box{
+  padding: 50px;
+}
+
+.post__text{
+  padding: 70px 0 0 0;
+  color: #2F281E;
+  line-height: 24px;
+}
+
+.post__video{
+  text-align: center;
+}
+
+@media only screen and (max-width: 980px){
+  .post__box{
+    padding: 20px;
+  }
+
+  .post__text{
+    padding-top: 30px;
+  }
+
+  .post__video iframe{
+    width: 100%;
+  }
+}

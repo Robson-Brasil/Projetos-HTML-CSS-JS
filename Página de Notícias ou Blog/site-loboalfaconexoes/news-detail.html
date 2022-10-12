@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Internet das Coisas</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-news.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <main class="apresentacao">
+    <div class="center">
+      <a href="index.html" class="logo">
+        <i class="logomarca"></i>
+      </a>
+      <div class="">
+        <a href="#" id="menu-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <nav class="menu" id="menu">
+        <ul>
+          <li class="menu__li">
+            <a href="index.html" class="menu__link">Home</a>
+          </li>
+          <li class="menu__li">
+            <a href="news.html" class="menu__link">News</a>
+          </li>
+          <li class="menu__li">
+            <a href="contact.html" class="menu__link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </div>
+
+    <section class="section-top-margin">
+      <div class="center">
+        <!-- <header class="p-15">
+            <h2 class="title align-left">Our Recent Post</h2>
+            <h5 class="subtitle align-left">Vampires The Romantic Ideology Behind Them</h5>
+          </header> -->
+        <div class="post-detail">
+          <div class="post-detail__img-box">
+            <img id="imagem" src="" alt="" class="img-responsiva">
+          </div>
+          <div class="post__box">
+            <h2 class="post__title" id="titulo"></h2>
+            <p class="post__subtitle">By <strong id="autor"></strong> | <span id="data"></span></p>
+            <div class="post__text">
+              <p class="mb-40" id="texto"></p>
+            </div>
+            <div class="post__video" id="box-video">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="center">
+        <div class="newsletter__box">
+          <div class="newsletter__wrapper">
+            <div class="newsletter__content">
+              <span class="newsletter__text">Get Update Protips every <br>newsletter</span>
+              <form action="" method="post" class="newsletter__form">
+                <div class="newsletter__box-input">
+                  <div class="newsletter__input-box">
+                    <input type="text" name="" value="" class="newsletter__input" placeholder="Enter your email">
+                  </div>
+                </div>
+                <div class="newsletter__box-submit">
+                  <input class="newsletter__submit" type="submit" name="" value="">
+                </div>
+              </form>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="center">
+        <div class="footer__box">
+          <i class="logomarca"></i>
+          <p class="footer__descricao">Maui helicopter tours are a great way to <br>see the island from a different
+            perspective <br>and have a fun adventure.</p>
+        </div>
+
+        <nav class="footer__links">
+          <strong class="footer__titulo">Quick Links</strong>
+          <ul>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Sobre Nós</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Blog</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Contato</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__pages">
+          <strong class="footer__titulo">Pages</strong>
+          <ul>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Disclaimer</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Financing</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__legal">
+          <strong class="footer__titulo">Legal Stuff</strong>
+          <ul>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Sobre Nós</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Blog</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">Contato</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="clear">
+
+        </div>
+      </div>
+      <div class="footer__autor">
+        <p>Design by <a href="#">@ehsan</a></p>
+      </div>
+    </footer>
+
+  </main>
+
+
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/posts.js"></script>
+  <script type="text/javascript" src="js/getUrlVars.js"></script>
+  <script type="text/javascript">
+    var id = getUrlVars()["id"];
+    id = id - 1;
+
+    var post = posts[id];
+
+    document.getElementById('titulo').innerHTML = post.titulo;
+    document.getElementById('autor').innerHTML = post.autor;
+    document.getElementById('data').innerHTML = post.data;
+    document.getElementById('imagem').src = post.imagem_post;
+    document.getElementById('texto').innerHTML = post.texto;
+
+
+    if (post.video) {
+      var videoHTML = '<iframe id="video" width="560" height="315" src="' + post.video + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      document.getElementById('box-video').innerHTML = videoHTML;
+    }
+
+
+
+  </script>
+</body>
+
+</html>
