@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.0" width="30.000000pt" height="30.000000pt" viewBox="0 0 30.000000 30.000000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-  <g transform="translate(0.000000,30.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-    <path d="M120 150 c0 -45 12 -50 50 -20 l25 20 -25 20 c-38 30 -50 25 -50 -20z" style="fill: rgb(0, 191, 255);"/>
-    <circle style="fill: rgba(216, 216, 216, 0); stroke: rgb(0, 191, 255); stroke-width: 32.2721px;" transform="matrix(0.311858, 0, 0, -0.307873, -19.02603, 330.538391)" cx="538" cy="594.5" r="442.029"/>
-  </g>
-</svg>
