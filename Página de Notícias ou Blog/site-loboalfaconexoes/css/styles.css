@@ -158,12 +158,12 @@ body {
 .menu__link {
   color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 16px;
 }
 
 .menu__link:hover {
-  color: #0b0b0b;
+  color: #00b3ff;
 }
 
 .clear {
