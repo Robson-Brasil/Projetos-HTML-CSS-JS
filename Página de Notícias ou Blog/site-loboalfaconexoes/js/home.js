@@ -49,7 +49,7 @@ var mySwiperPosts = new Swiper(".swiper-container-posts", {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
 
     // when window width is >= 480px
@@ -64,7 +64,7 @@ var mySwiperPosts = new Swiper(".swiper-container-posts", {
     },
     320: {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
 
     // when window width is >= 480px
