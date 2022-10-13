@@ -163,7 +163,7 @@ body {
 }
 
 .menu__link:hover {
-  color: #ffffff;
+  color: #0b0b0b;
 }
 
 .clear {
@@ -181,7 +181,7 @@ body {
 }
 
 .bt-sigin {
-  border: 1px solid #ffffff;
+  border: 1px solid #17fc02;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -735,7 +735,7 @@ body {
 
 .pagination__link.ativo,
 .pagination__link:hover {
-  color: #ff4f4f;
+  color: #51ff00;
 }
 
 .footer {
@@ -763,7 +763,7 @@ body {
 }
 
 .footer__link:hover {
-  color: #ff4f4f;
+  color: #00fb11;
 }
 
 .footer__menu-item {
