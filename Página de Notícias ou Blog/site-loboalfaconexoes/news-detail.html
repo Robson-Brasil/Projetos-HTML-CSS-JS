@@ -137,7 +137,6 @@
 
   </main>
 
-
   <script type="text/javascript" src="js/menu.js"></script>
   <script type="text/javascript" src="js/posts.js"></script>
   <script type="text/javascript" src="js/getUrlVars.js"></script>
@@ -153,13 +152,10 @@
     document.getElementById('imagem').src = post.imagem_post;
     document.getElementById('texto').innerHTML = post.texto;
 
-
     if (post.video) {
       var videoHTML = '<iframe id="video" width="560" height="315" src="' + post.video + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
       document.getElementById('box-video').innerHTML = videoHTML;
     }
-
-
 
   </script>
 </body>
