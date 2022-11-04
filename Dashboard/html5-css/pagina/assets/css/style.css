@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Nasa;
+    src: url(Nasa.ttf);
+}
+
+* {margin:0; padding:0;}
+body {background: #fff; color: #111; margin:0; font-family: "Open Sans", sans-serif;}
+header {padding: 5px; background: #262626; color: #fff; position: fixed; width:100%; top:0;}
+
+nav {
+    font-size: 15px;
+    padding: 5px; 
+    background:#403D58;
+    color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+
+nav > a {color:#fff; font-family: Nasa; font-size: 13px; text-decoration: none; padding:10px; float: left;}
+nav > a > img {width:30px; height: 30px; margin: 4px; border:1px solid #f1f1f1; border-radius: 20px;}
+nav ul {list-style: none; float: right;padding: 10px; font-size:11px;}
+nav ul li {display: inline; padding: 10px;}
+nav ul li a {color:#fff; text-decoration:none;}
+nav ul li a:hover {text-decoration:underline;}
+
+
+/* SECTION 1 */
+div.section1 {
+    background: url("../img/bg1.jpg") transparent;
+    padding: 100px 50px;
+    background-attachment: fixed;
+    color: #fff;
+    text-align:center;
+    border-bottom:1px solid #262626;
+}
+
+div.section1 h1 {font-family: Nasa;}
+div.section1 h1, div.section1 h3 {margin:0; text-shadow: #000 2px 2px 2px;}
+div.section1 h3 { font-size: 14px; color: #f1f1f1; }
+
+/* SECTION 2 */
+div.section2 {
+    background: #403D58;
+    padding: 20px;
+    color:#fff;
+    text-shadow: #000 2px 2px 2px;
+    border-bottom:1px solid #262626;
+    text-align:center;
+}
+
+div.section2 h1 {text-align: center; border-bottom:1px solid silver; padding:10px; margin:30px auto; max-width:500px;}
+div.section2 p {font-size: 20px;}
+
+
+
+/* SECTION 3 */
+div.section3 {
+    background: url("../img/bg2.jpg") no-repeat #403D58;
+    padding: 20px;
+    border-bottom:1px solid #262626;
+    background-attachment:fixed;
+    color:#fff;
+    text-shadow: #000 2px 2px 2px;
+}/*  #C14566 */
+
+
+div.section3 h1 {text-align: center; border-bottom:1px solid silver; padding:10px; margin:30px auto; max-width:500px; }
+div.section3 form {margin: auto; text-align: center;}
+div.section3 form p { padding: 10px;}
+div.section3 form input {width: 300px; border: 2px solid #403D58; padding: 10px; border-radius: 10px;}
+div.section3 form textarea {width: 302px; padding: 10px;border: 2px solid #403D58; color: #000; font-size:20px;border-radius: 10px;}
+
+
+
+footer {background: #303030; padding: 30px; text-align:center; color:#fff;}
+footer ul {list-style: none;}
+footer ul li {display:inline; padding: 5px;}
+footer ul li a {text-decoration:none; color:#f1f1f1; font-size:40px;}
+footer ul li a:hover {text-decoration:none; color:#BBE1EE;}
+
+.search {cursor:pointer;}
+hr {margin: auto 300px;}
+
+@media (min-width: 992px) {
+
+    div.section1 h1 {font-size: 150px; }
+    div.section1 h3 {font-size: 24px; }
+	div.section1 { padding: 300px;}
+    nav > a {font-size: 27px;}
+    nav ul {padding: 10px; font-size:15px;}
+    
+    div.section3 form textarea, div.section3 form input  {width: 600px;}
+    div.section2 {padding: 200px;}
+    div.section3 {padding: 200px;}
+}

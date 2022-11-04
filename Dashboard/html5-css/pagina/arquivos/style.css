@@ -1,0 +1,60 @@
+@charset "utf-8";
+* {margin:0;padding:0;}
+body {background:#fff;}
+@font-face: "Nasa.ttf";
+
+
+/* NAV */
+nav {
+    background: #111;
+    color:#fff;
+    padding: 25px;
+    border-bottom: 1px solid silver;
+    position: fixed;
+    width: 100%;
+
+}
+
+nav > a {color: #fff; text-decoration: none;font-family: Nasa; font-size:28px;}
+nav ul {list-style:none; float:right; margin-right:30px;}
+nav ul li a {display:inline; margin-right:5px; color:#fff; text-decoration:none;}
+nav ul li a:hover {color: #ccc;}
+
+
+/* SECTION 1 */
+.section1 {
+    background: url("../img/bg.jpg");
+    background-attachment: fixed;
+    padding: 100px;
+}
+
+.section1 h1 {color:#fff; text-align:center; text-shadow: #000 2px 2px 2px; font-family: Nasa;border-bottom:1px solid silver;}
+.section1 h3 {color:#fff;text-align:center;text-shadow: #000 2px 2px 2px; font-size: 13px; font-family:cursive;}
+
+/* SECTION 2 */
+.section2 {padding: 20px; background:#403D58; color: #fff; text-align:center;}
+.section2 h1 {font-size:50px; text-shadow: #000 2px 2px 2px;border-bottom:1px solid silver;}
+.section2 p {margin-top:15px; text-align:left;}
+
+/* SECTION 3 */
+.section3 {padding: 20px; background: url("../img/bg.jpg"); text-align: center; background-attachment: fixed;}
+.section3 h1 {text-align: center; border-bottom:1px solid silver; padding:10px; margin:30px auto; max-width:500px; color: #fff; text-shadow:#000 2px 2px 2px; }
+.section3 form {margin: auto; text-align: center;}
+.section3 form p { padding: 10px;}
+.section3 form input {width: 300px; border: 2px solid #403D58; padding: 10px; }
+.section3 form textarea {width: 302px; padding: 10px;border: 2px solid #403D58; color: #000; font-size:20px;}
+
+
+/* FOOTER */
+footer {padding:30px; background:#111; color: #fff; text-align: center;}
+
+@media (min-width:768px){
+    .section1 {padding: 400px;}
+    .section1 h1 {color:#fff; font-size: 100px; text-align:center; text-shadow: #000 2px 2px 2px;}
+    .section1 h3 {color:#fff;text-align:center;text-shadow: #000 2px 2px 2px; font-size:30px;}
+    .section3 {padding: 200px; }
+    .section2 {padding: 200px; }
+
+    nav ul {list-style:none; float:right; margin-right:30px;}
+
+}

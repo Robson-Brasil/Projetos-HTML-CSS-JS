@@ -1,0 +1,4 @@
+
+ul li {list-style:none; }
+ul li::after { content: " OK → " }
+h1::before { content: " ↓ " }
