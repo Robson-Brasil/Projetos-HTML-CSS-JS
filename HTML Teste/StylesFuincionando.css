@@ -1,0 +1,202 @@
+/* Estilos do corpo da página */
+body {
+    display: inline-flexbox;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.dark-mode body {
+    background-color: #ffffff;
+    color: #fff;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Estilos do cabeçalho */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.titulo-pagina {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+#mode-switcher {
+    display: inline-block;
+    align-items: center;
+}
+
+#mode-switcher span {
+    margin: 0 10px;
+}
+
+/* Estilos do main */
+main {
+    max-width: 800px;
+    /* define a largura máxima */
+    margin: 0 auto;
+    /* define a margem automática para centralizar o elemento */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos do título da página */
+.titulo-pagina {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+main table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Estilos do interruptor de modo */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    width: 60px;
+    height: 34px;
+}
+
+/* Estilos do interruptor de modo */
+.switch input {
+    display: none;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff0000;
+    border-radius: 34px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 8px;
+    bottom: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 68px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(52px);
+    -ms-transform: translateX(52px);
+    transform: translateX(52px);
+}
+
+.dark-mode-switch {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    width: 60px;
+    height: 34px;
+}
+
+.dark-mode-switch input {
+    display: none;
+}
+
+.dark-slider {
+    background-color: #ffffff;
+    }
+
+    .dark-slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: rgb(0, 0, 0);
+        transition: 0.4s;
+        border-radius: 50%;
+        }
+        
+        .dark-mode-switch input:checked + .dark-slider {
+        background-color: #00ff26;
+        }
+
+
+.dark-mode-switch input:checked+.dark-slider {
+    background-color: #00ff26;
+}
+
+.dark-mode .titulo-pagina {
+    color: #fff;
+}
+
+.dark-mode #mode-switcher .dark-mode-text {
+    color: #fff;
+}
+
+.dark-mode #mode-switcher .dark-mode-label {
+    color: #ff06fb;
+}
+
+.dark-slider.round {
+    border-radius: 0px;
+}
+
+.dark-slider.round:before {
+    border-radius: 0%;
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+    .button-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .button-container {
+        grid-template-columns: 1fr;
+    }
+}

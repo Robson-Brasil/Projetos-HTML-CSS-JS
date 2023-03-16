@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESP32 Web Server</title>
+    <meta name="author" content="Robson Brasil">
+    <meta name="keywords"
+        content="iot, internet of things, internet das coisas, automação residencial, programação em C++, home assistant, esp32, alexa, google assistant">
+    <link rel="stylesheet" href="style.css">
+    <script src="darkmode.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Minha Página</h1>
+        <div id="mode-switcher">
+            <span>Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="mode-switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="label-container">
+            <tbody>
+                    
+                <h4>Luz Forte</h4><label class="switch"><input type="checkbox" onchange="toggleCheckbox(this)"
+                                id="23"><span class="slider"></span></label>
+                        <h4>Luz Fraca</h4><label class="switch"><input type="checkbox" onchange="toggleCheckbox(this)"
+                                id="22"><span class="slider"></span></label>
+                        <h4>Cooler 3</h4><label class="switch"><input type="checkbox" onchange="toggleCheckbox(this)"
+                                id="21"><span class="slider"></span></label>
+                        <h4>Som Bluetooth</h4><label class="switch"><input type="checkbox" onchange="toggleCheckbox(this)"
+                                id="5"><span class="slider"></span></label>
+                </tr>
+                <tr>
+                        <h4>Quarto</h4><label class="switch"><input type="checkbox" onchange="toggleCheckbox(this)"
+                                id="26"><span class="slider"></span></label>
+                        <h4>Interruptor 6</h4><label class="switch"><input type="checkbox" onchange="toggleCheckbox(this)"
+                                id="18"><span class="slider"></span></label>
+                        <h4>Interruptor 7</h4><label class="switch"><input type="checkbox" onchange="toggleCheckbox(this)"
+                                id="19"><span class="slider"></span></label>
+                        <h4>Interruptor 8</h4><label class="switch"><input type="checkbox" onchange="toggleCheckbox(this)"
+                                id="25"><span class="slider"></span></label>
+                </tr>
+            </tbody>
+        </div>
+    </main>
+</body>
+</html>
