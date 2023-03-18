@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+* {
+	font-family: 'Outfit', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+:root {
+	--black: #222;
+	--blue: #335DFF;
+	--blue-d-1: #204AEE;
+	--grey-l-1: #F5F5F5;
+	--grey: #EEE;
+	--grey-d-1: #888;
+	--yellow: #FFC652;
+	--white: #FFF;
+	--red: #F00000;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(90deg, var(--grey-l-1) 31px, transparent 1px) 50%, linear-gradient(180deg, var(--grey-l-1) 31px, var(--grey-d-1) 1px) 50%;
+	background-size: 32px 32px;
+	color: var(--black);
+	padding: 0 1rem;
+}
+
+
+
+/* PAGE TRANSITION */
+body::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	transition: bottom .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+	background: var(--blue);
+	z-index: 9999;
+}
+body.hide::before {
+	bottom: 100%;
+}
+/* PAGE TRANSITION */
+
+
+
+
+
+
+
+/* GLOBAL STYLES */
+.mb-4 {
+	margin-bottom: 1rem;
+}
+.btn {
+	padding: .75rem 1.5rem;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: background .2s;
+	border-radius: .25rem;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.btn-blue {
+	background: var(--blue);
+	color: var(--white);
+}
+.btn-blue:hover {
+	background: var(--blue-d-1);
+}
+/* GLOBAL STYLES */
+
+
+
+
+
+
+
+/* STYLE */
+.form-wrapper {
+	padding: 2rem;
+	background: var(--white);
+	border-radius: .25rem;
+	max-width: 576px;
+	width: 100%;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .05);
+	margin: 1rem 0;
+}
+.form-title {
+	font-size: 2rem;
+	margin-bottom: .5rem;
+	font-weight: 600;
+}
+.form-detail {
+	color: var(--grey-d-1);
+	margin-bottom: 2rem;
+}
+.form-group {
+	margin-bottom: 1.5rem;
+}
+.form-group input {
+	width: 100%;
+	padding: .75rem 1rem;
+	border: 1px solid var(--grey);
+	outline: none;
+	border-radius: .25rem;
+	font-size: 1rem;
+}
+.form-group input:focus,
+.form-group input:not(:placeholder-shown) {
+	background: var(--grey-l-1);
+}
+.form-group input::placeholder {
+	color: var(--grey-d-1);
+}
+.form-group label {
+	display: inline-block;
+	margin-bottom: .25rem;
+}
+label.required::after {
+	content: ' *';
+	color: var(--red);
+}
+.form-link {
+	color: var(--blue);
+	text-decoration: none;
+}
+.form-link:hover {
+	text-decoration: underline;
+}
+/* STYLE */

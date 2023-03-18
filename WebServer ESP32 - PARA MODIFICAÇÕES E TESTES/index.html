@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Robson Brasil">
+    <meta name="keywords"
+        content="iot, internet of things, internet das coisas, automação residencial, programação em C++, home assistant, esp32, alexa, google assistant">
+    <link rel="icon" href="logo-1.png">
+    <title>WebServer ESP32</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Dark.js"></script>
+</head>
+
+<body >
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-content">
+          <img src="logo-1.png" alt="Logo">
+          <div>
+            <h1>IoT - Internet das Coisas</h1>
+            <h2>Automações com ESP32</h2>
+          </div>
+        </div>
+        <button id="toggle-mode" onclick="toggleDarkMode()">
+            <img class="mode-icon" src="darkmode.png" alt="Modo Escuro">
+            <img class="mode-icon" src="lightmode.png" alt="Modo Claro">
+          </button>
+      </header>
+
+<!-- Botões -->
+<div class="button-container">
+    <div class="button">
+        <img src="OFF.png" alt="Botão 1 desligado" class="button-image button-off">
+        <img src="ON.png" alt="Botão 1 ligado" class="button-image button-on">
+        <h3>Botão 1</h3>
+        <input type="checkbox" onchange="toggleCheckbox(this)" id="23" checked>
+      </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por Robson Brasil</p>
+    </footer>
+</body>
+
+</html>

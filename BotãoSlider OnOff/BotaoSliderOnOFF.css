@@ -1,0 +1,112 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/* Apenas o container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Aqui comença o Toggler On/Off */
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Texto que decidi adicionar como exemplo */
+.toggle-wrapper .description {
+  margin-left: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+}
+
+/* Esconde o checkbox */
+.switch > .hidden-toggle {
+  display: none;
+}
+
+/* Caixinha onde o botão desliza */
+.switch > .slider {
+  background: #e0e2db;
+  border: 0.1rem solid #bbb;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: all 300ms ease-in-out;
+  width: 8rem;
+  height: 4rem;
+  position: relative;
+  box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
+    0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* O botão redondinho */
+.switch > .slider > .button {
+  content: "";
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: #ff0000;
+  top: 0.4rem;
+  left: 0.4rem;
+  transition: all 300ms ease-in-out;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* Texto ON ou OFF (começa off) */
+.switch > .slider:after {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translate(0, -50%);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #444;
+  font-weight: bold;
+  z-index: 1;
+  transition: all 300ms ease-in-out;
+  content: "OFF";
+}
+
+/* Slider ON */
+.switch > .hidden-toggle:checked ~ .slider {
+  background: #ffffff;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
+    0 0 1rem rgb(43, 255, 0);
+}
+
+/* Botão ON */
+.switch > .hidden-toggle:checked ~ .slider > .button {
+  left: 4.4rem;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  background: #e0e2db;
+}
+
+/* Texto ON */
+.switch > .hidden-toggle:checked ~ .slider:after {
+  right: 4.4rem;
+  color: #f1f1ff;
+  content: "ON";
+}

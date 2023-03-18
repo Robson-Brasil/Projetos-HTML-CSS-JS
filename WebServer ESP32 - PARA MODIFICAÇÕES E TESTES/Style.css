@@ -1,0 +1,76 @@
+/* Estilo do cabeçalho */
+header {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-content img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Estilo do botão */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: 150px;
+}
+
+.button-image {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.button-on {
+  display: none;
+}
+
+/* Estilo do modo escuro */
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark-mode .button-image.button-off {
+  display: none;
+}
+
+.dark-mode .button-image.button-on {
+  display: block;
+}
+
+.dark-mode footer {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+

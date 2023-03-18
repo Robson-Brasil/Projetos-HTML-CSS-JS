@@ -26,16 +26,19 @@
         </header>
         <main>
             <div class="button-container">
-                <button class="off"><input type="checkbox" onchange="toggleCheckbox(this)"
-                    id="23">Botão 1</button>
-                <button class="off"><input type="checkbox" onchange="toggleCheckbox(this)"
-                    id="22">Botão 2</button>
-                <button class="off">Botão 3</button>
-                <button class="off">Botão 4</button>
-                <button class="off">Botão 5</button>
-                <button class="off">Botão 6</button>
-                <button class="off">Botão 7</button>
-                <button class="off">Botão 8</button>
+                <button class="button active" onclick="toggleButton(this)">
+                    <input type="checkbox" onchange="toggleCheckbox(this)" id="23">Luz Forte</button>
+                <button class="button"><input type="checkbox" onchange="toggleCheckbox(this)"
+                    id="22">Luz Fraca</button>
+                <button class="button"><input type="checkbox" onchange="toggleCheckbox(this)"
+                    id="21">Cooler</button>
+                <button class="button"><input type="checkbox" onchange="toggleCheckbox(this)"
+                    id="5">Som Bluetooth</button>
+                <button class="button"><input type="checkbox" onchange="toggleCheckbox(this)"
+                    id="26">Luz Principal</button>                
+                <button class="button">Botão 6</button>
+                <button class="button">Botão 7</button>
+                <button class="button">Botão 8</button>
             </div>
         </main>
     </body>

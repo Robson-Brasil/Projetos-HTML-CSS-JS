@@ -1,0 +1,277 @@
+body {
+  lang: "pt-br";
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  height: 50px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo-image {
+  max-width: 100px; 
+  margin-left: -5px; 
+  }
+
+  h1, h2 {
+    display: block;
+    text-align: center;
+    line-height: 0.5; /* valor menor que 1.5 (padrão) */
+  }
+  
+
+.dark-mode-switch-wrapper {
+  background-color: transparent;
+  color: #f3f1f1;
+}
+
+/* Alterar as cores e estilos no modo escuro */
+.dark-mode header {
+  background-color: #333;
+  color: #ffffff;  
+}
+
+.dark-mode body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.light-mode #dark-mode-switch {
+  background-color: #333;
+  padding: 5px;
+}
+
+/* Esconder a imagem de dark mode quando o modo claro está ativado */
+.light-mode .dark-mode-image {
+  background-color: #333;
+  max-width: 128px;
+  max-height: 128px;
+  display: inline-block;
+}
+
+/* Esconder a imagem de light mode quando o modo escuro está ativado */
+.dark-mode .light-mode-image {
+  max-width: 128px;
+  max-height: 128px;
+  display:absolute;
+  background-color: #333;
+}
+
+/* Definir o tamanho das imagens */
+.dark-mode-image,
+.light-mode-image {
+  display: none;
+  background-color: #333;
+}
+
+#dark-mode-image, #light-mode-image {
+  max-width: 128px;
+  max-height: 128px;
+}
+
+#dark-mode-switch {
+  background-color: #333;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#dark-mode-switch span {
+  margin-right: 10px;
+  background-color: #333;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.dark-mode #dark-mode-switch {
+  color: #ffffff;
+  background-color: #333;
+}
+
+.dark-mode .dark-mode-switch-wrapper {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.dark-mode table, td {
+  color: #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  border: none;
+}
+
+td {
+  padding: 10px;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.dark-mode td {
+  color: #ffffff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* estilo para os botões da tabela */
+.toggle-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+  background-color: transparent;
+}
+
+.toggle-button.off {
+  background-image: url('OFF.png');
+}
+
+.toggle-button.on {
+  background-image: url('ON.png');
+}
+
+.button-text {
+  display: block;
+  margin-top: 150px; /* ajuste a margem superior de acordo com sua preferência */
+  color: #000000;
+  font-size: 25px; /* aumenta o tamanho da fonte para 16 pixels */
+  text-align: center; /* alinha o texto ao centro */
+}
+
+.button-1 {
+  width: 200px;
+  height: 200px;
+}
+
+.button-2 {
+  width: 200px;
+  height: 200px;
+}
+
+.button-3 {
+  width: 200px;
+  height: 200px;
+}
+
+.button-4 {
+  width: 200px;
+  height: 200px;
+}
+
+.button-5 {
+  width: 200px;
+  height: 200px;
+}
+
+.button-6 {
+  width: 200px;
+  height: 200px;
+}
+
+.button-7 {
+  width: 200px;
+  height: 200px;
+}
+
+.button-8 {
+  width: 200px;
+  height: 200px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 450px) {
+  header {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .light-mode .dark-mode-image {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode .light-mode-image {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .dark-mode-image,
+  .light-mode-image {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .centered-text {
+    font-size: 18px;
+  }
+}

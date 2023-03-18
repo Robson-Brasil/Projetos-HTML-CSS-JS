@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
   const modeSwitch = document.getElementById("mode-switch");
   const body = document.querySelector('body');
 
@@ -17,5 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.toggle('on');
     });
   });
+
+  function toggleButton(button) {
+    var checkbox = button.querySelector('input[type="checkbox"]');
+    button.classList.toggle("active", checkbox.checked);
+    if (!checkbox.checked) {
+      button.classList.remove("active");
+    }
+  }
+
+  function toggleCheckbox(checkbox) {
+    var button = checkbox.parentNode;
+    toggleButton(button);
+  }
 
 });

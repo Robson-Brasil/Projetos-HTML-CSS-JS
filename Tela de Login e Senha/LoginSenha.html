@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Animado</title>
+	<link rel="stylesheet" href="LoginSenha.css">
+</head>
+
+<body>
+	<div class="box">
+		<form autocomplete="off" action="http://192.168.15.50:3232/login" method="post">
+			<h2>INTERNET DAS COISAS</h2>
+			<div class="inputBox">
+				<input type="text" name="RobsonBrasil" required="required">
+				<span>Nome de Usuário</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" name="loboalfa" required="required">
+				<span>Senha</span>
+				<i></i>
+			</div>
+			<div class="links">
+				<a href="#">Esqueceu a senha?</a>
+				<a href="#">Faça seu cadastro</a>
+			</div>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+	<a href="pagina2.html">Ir para a página 2</a>
+
+</body>
+<script>
+	setTimeout(function() {
+	window.location.href = "WebServer.html";
+	}, 2000); // 5000 ms = 5 segundos
+  </script>
+</html>

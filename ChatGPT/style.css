@@ -118,7 +118,7 @@ button {
     cursor: pointer;
 }
 
-button.on {
+button.active {
     background-color: #4CAF50;
 }
 
