@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azerbaijan Flag</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(221, 239, 255);
+            display: grid;
+            place-items: center;
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+        h3 {
+            position: absolute;
+            text-align: center;
+            top: 20px;
+        }
+
+        /* Main Style Stars from here  */
+        .flag {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .azerbaijan {
+            background: linear-gradient(#01aef0 33%, #ef3341 33%, #ef3341 66%, #00a650 0);
+        }
+
+        .azerbaijan__logo {
+            position: absolute;
+            inset: 0;
+            width: 55px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Azerbaijan Flag</h3>
+    <div class="flag azerbaijan">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia Flag</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(221, 239, 255);
+    display: grid;
+    place-items: center;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+h3 {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+}
+
+/* Main Style Stars from here  */
+.flag {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.australia {
+    background-color: #001b6a;
+}
+
+.australia__left__top {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.australia__plus {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 7px white) drop-shadow(7px 0 white) drop-shadow(-7px 0 white) drop-shadow(0 -7px white);
+}
+
+.australia__plus .plus {
+    width: 100%;
+    height: 100%;
+    background-color: #e51837;
+    clip-path: polygon(0% 40%,
+            43% 40%,
+            43% 0%,
+            58% 0%,
+            58% 40%,
+            100% 40%,
+            100% 60%,
+            58% 60%,
+            58% 100%,
+            43% 100%,
+            43% 60%,
+            0% 60%);
+}
+
+.australia__x {
+    position: absolute;
+    inset: 0;
+}
+
+.australia__x>.x__strip-1,
+.australia__x>.x__strip-2 {
+    position: relative;
+    background-color: white;
+    width: 150%;
+    height: 20px;
+    transform: rotate(-35deg) scale(1.3) translate(-13px, 5px);
+}
+
+.australia__x>.x__strip-2 {
+    transform: rotate(35deg) scale(1.3) translate(13px, 30px);
+}
+
+.australia__x>.x__strip-1::before,
+.australia__x>.x__strip-1::after,
+.australia__x>.x__strip-2::before,
+.australia__x>.x__strip-2::after {
+    position: absolute;
+    background-color: #e51837;
+    content: "";
+    width: 35%;
+    height: 7px;
+}
+
+.australia__x>.x__strip-1::before,
+.australia__x>.x__strip-2::before {
+    top: 10px;
+}
+
+.australia__x>.x__strip-1::after,
+.australia__x>.x__strip-2::after {
+    bottom: 10px;
+    left: 35%;
+}
+    </style>
+</head>
+
+<body>
+    <h3>Australia Flag</h3>
+
+    <div class="container" data-name="#9 - Australia">
+        <div class="flag australia">
+            <div class="australia__left__top">
+                <div class="australia__plus">
+                    <div class="plus"></div>
+                </div>
+                <div class="australia__x">
+                    <div class="x__strip-1"></div>
+                    <div class="x__strip-2"></div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

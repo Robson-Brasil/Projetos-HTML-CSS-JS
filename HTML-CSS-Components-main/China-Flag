@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China Flag</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(221, 239, 255);
+            display: grid;
+            place-items: center;
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+        h3 {
+            position: absolute;
+            text-align: center;
+            top: 20px;
+        }
+
+        /* Main Style Stars from here  */
+        .flag {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .china {
+            background: #dd2d26;
+        }
+
+        .china__star,
+        .china__small_star {
+            position: absolute;
+            margin: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #fddd00;
+            clip-path: polygon(50% 0%,
+                    61% 35%,
+                    98% 35%,
+                    68% 57%,
+                    79% 91%,
+                    50% 70%,
+                    21% 91%,
+                    32% 57%,
+                    2% 35%,
+                    39% 35%);
+        }
+
+        .china__small_star {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+        }
+
+        .china__small_star:nth-child(2) {
+            left: 82px;
+            top: 10px;
+            transform: rotate(30deg);
+        }
+
+        .china__small_star:nth-child(3) {
+            left: 100px;
+            top: 27px;
+            transform: rotate(45deg);
+        }
+
+        .china__small_star:nth-child(4) {
+            left: 102px;
+            top: 55px;
+        }
+
+        .china__small_star:nth-child(5) {
+            left: 82px;
+            top: 75px;
+            transform: rotate(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>China Flag by using HTML & CSS</h3>
+    <div class="flag china">
+        <div class="china__star"></div>
+        <div class="china__small_star"></div>
+        <div class="china__small_star"></div>
+        <div class="china__small_star"></div>
+        <div class="china__small_star"></div>
+    </div>
+</body>
+
+</html>

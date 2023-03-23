@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Japanese FLag</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1;">
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            color: azure;
+        }
+
+        div {
+            padding-top: 30px;
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            background: rgb(255, 255, 255);
+            border-top: 0px solid rgb(255, 255, 255);
+        }
+
+        i {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: inline-block;
+            background: rgb(223, 31, 31);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Japanese Flag by using HTML & CSS</h1>
+    <br>
+    <div>
+        <i>&nbsp;</i>
+    </div>
+</body>
+
+</html>

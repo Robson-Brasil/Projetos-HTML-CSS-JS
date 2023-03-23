@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover Animation</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: rebeccapurple;
+        }
+        div{
+            background: #fff;
+            border-radius: 6px;
+            color: #000;
+            padding-inline-start: 16px;
+            width: 220px;
+            overflow: hidden;
+            transition: .6s;
+            transform: translate(0);
+            font-weight: 400;
+            padding: 30px;
+        }
+
+        div:hover{
+            color: #fff;
+        }
+
+        div p{
+            margin: 0;
+        }
+
+        div::before{
+            content: "";
+            position: absolute;
+            top: -75px;
+            left: -45px;
+            z-index: -1;
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,156,1) 50%, rgba(252,176,69,1) 100%);
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            transition: .6s;
+        }
+
+        div:hover::before{
+            transform: scale(4.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Product Name</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius odit ea harum eaque quod magni, consequatur totam ipsam fugiat pariatur vitae, debitis dolore cupiditate dolores! Doloribus eveniet distinctio odit!</p>
+    </div>
+</body>
+</html>

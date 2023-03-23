@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Aspect Ratio</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container{
+            width: 380px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .example1{
+            border: 2px solid black;
+            padding: 35px;
+            background: url("https://wallpapers.com/images/featured/kjzc9tzmwq40sj5f.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 10px;
+        }
+        .example2{
+            background: url("https://wallpapers.com/images/featured/kjzc9tzmwq40sj5f.jpg");
+            background-position: right, bottom, left, right;
+            background-repeat: no-repeat;
+            padding: 15px;
+            margin: 10px;
+        }
+        .example3{
+            border: 1px solid black;
+            background-repeat: no-repeat;
+            background: url("https://wallpapers.com/images/featured/kjzc9tzmwq40sj5f.jpg");
+            background-size: cover;
+            padding: 15px;
+            margin: 10px;
+
+        }
+        .example4{
+            border: 2px silid black;
+            padding: 35px;
+            background: yellow;
+            background-clip: padding-box;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>CSS Background</h1>
+        <div class="example1">
+            <h2>Backgournd Origin</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente cum similique voluptatibus totam corrupti facere odit. Eos, dicta sapiente!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt doloribus fugiat sapiente voluptatibus beatae corrupti quae tempore in inventore?</p>
+        </div>
+        <div class="example2">
+            <h2>Backgournd Origin</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente cum similique voluptatibus totam corrupti facere odit. Eos, dicta sapiente!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt doloribus fugiat sapiente voluptatibus beatae corrupti quae tempore in inventore?</p>
+        </div>
+        <div class="example3">
+            <h2>Backgournd Origin</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente cum similique voluptatibus totam corrupti facere odit. Eos, dicta sapiente!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt doloribus fugiat sapiente voluptatibus beatae corrupti quae tempore in inventore?</p>
+        </div>
+        <div class="example4">
+            <h2>Backgournd Origin</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente cum similique voluptatibus totam corrupti facere odit. Eos, dicta sapiente!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt doloribus fugiat sapiente voluptatibus beatae corrupti quae tempore in inventore?</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
