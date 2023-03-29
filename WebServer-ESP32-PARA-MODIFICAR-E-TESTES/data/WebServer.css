@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 /* Alterar as cores e estilos no modo escuro */
@@ -98,7 +99,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  
   height: 95px; /* altura desejada */
 
 }
@@ -209,9 +209,9 @@ input:checked+.slider:before {
 
 /* Estilos para tabelas */
 table {
-    border-collapse: collapse;
+    border-collapse:unset;
     width: 100%;
-    border-spacing: 10 50px;
+
     font-size: 1rem;
 }
 
@@ -285,6 +285,15 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 412px) {
+  tg {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 412px) {
   table {
     font-size: 14px;
