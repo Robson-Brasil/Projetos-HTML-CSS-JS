@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleCheckbox(element) {
     var xhr = new XMLHttpRequest();
     if (element.checked) { xhr.open("GET", "/update?relay=" + element.id + "&state=1", true); }
-    else { xhr.open("GET", "/update?relay=" + element.id + "&state=0", true); }
+    else { xhr.open("GET", "/update?relay=" + element.id + "&state=0", true); xhr.send(); }
     xhr.send();
 }    
 

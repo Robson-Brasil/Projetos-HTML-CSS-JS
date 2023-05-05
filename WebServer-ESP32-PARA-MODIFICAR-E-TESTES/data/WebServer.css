@@ -1,58 +1,59 @@
 /* Define fonte base */
 body {
-    lang: "pt-br";
-    font-family: Arial;
-    font-size: 20px;
-    text-align: center;
-    background-color: #ffffff;
-    color: #333;
-    transition: background-color 0.2s ease;
-    position: relative;
-    min-height: 50vh; /* Para garantir que a altura do corpo ocupe toda a tela */
-    background-image: url("IoT.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+  lang: "pt-br";
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #333;
+  transition: background-color 0.2s ease;
+  position: relative;
+  min-height: 50vh;
+  /* Para garantir que a altura do corpo ocupe toda a tela */
+  background-image: url("IoT.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 /* Alterar as cores e estilos no modo escuro */
 .dark-mode header {
-    background-color: #333;
-    ;
-    color: #ffffff;
+  background-color: #333;
+  ;
+  color: #ffffff;
 
 }
 
 .dark-mode body {
-    background-color: #000000;
-    color: #fff;
+  background-color: #000000;
+  color: #fff;
 
 }
 
 body.dark-mode {
-    background-color: #000000;
-    color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
 
 }
 
 /* Esconder a imagem de dark mode quando o modo claro está ativado */
 .light-mode .dark-mode-image {
 
-    background-color: #333;
-    max-width: 128px;
-    max-height: 128px;
-    display: inline-block;
+  background-color: #333;
+  max-width: 128px;
+  max-height: 128px;
+  display: inline-block;
 
 }
 
 /* Esconder a imagem de light mode quando o modo escuro está ativado */
 .dark-mode .light-mode-image {
 
-    background-color: #333;
-    max-width: 128px;
-    max-height: 128px;
-    display: inline-block;
+  background-color: #333;
+  max-width: 128px;
+  max-height: 128px;
+  display: inline-block;
 
 }
 
@@ -60,35 +61,36 @@ body.dark-mode {
 
 .dark-mode-image,
 .light-mode-image {
-    display: none;
+  display: none;
 }
 
 #dark-mode-switch {
 
-    /* altura da imagem */
-    padding: 0;
-    /* remova o padding do botão */
-    border: none;
-    /* remova a borda do botão */
-    background: none;
-    /* remova o fundo do botão */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 250px; /* ou outro valor que você preferir */
-    top: 17%;
-    position: absolute;
-    left: 70%;
+  /* altura da imagem */
+  padding: 0;
+  /* remova o padding do botão */
+  border: none;
+  /* remova a borda do botão */
+  background: none;
+  /* remova o fundo do botão */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  /* ou outro valor que você preferir */
+  top: 17%;
+  position: absolute;
+  left: 70%;
 }
 
 
 #dark-mode-switch span {
-    display: inline-block;
-    margin-left: auto;
-    color:#ffffff;
-    font-size: 30px;
-    white-space: nowrap;
-    }
+  display: inline-block;
+  margin-left: auto;
+  color: #ffffff;
+  font-size: 30px;
+  white-space: nowrap;
+}
 
 /* Estilos do cabeçalho */
 
@@ -98,15 +100,34 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  height: 95px; /* altura desejada */
+  padding: 19;
+}
 
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  margin-right: 10px;
+  max-width: 10%;
+  height: auto;
+}
+
+.header-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .header-title {
+    font-size: 1.2em;
+  }
 }
 
 .header-content {
   flex-direction: column;
   align-items: center;
-
 }
 
 .header-content img {
@@ -120,104 +141,129 @@ header {
 
 /* Estilos para o botão de alternância de tema */
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    height: 50px
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 50px
 }
 
 .switch input {
-    display: none
+  display: none
 }
 
 .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(255, 0, 0);
-    border-color: #ffffff;
-    border-style: solid;
-    border-spacing: 0;
-    border-collapse: collapse;
-    border-radius: 7px
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 0, 0);
+  border-color: #ffffff;
+  border-style: solid;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-radius: 7px
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 33px;
-    width: 33px;
-    left: 5px;
-    bottom: 5px;
-    background-color: #ffffff;
-    border-spacing: 0;
-    border-collapse: collapse;
-    border-color: #000000;
-    border-style: solid;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 7px
+  position: absolute;
+  content: "";
+  height: 33px;
+  width: 33px;
+  left: 5px;
+  bottom: 5px;
+  background-color: #ffffff;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-color: #000000;
+  border-style: solid;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 7px
 }
 
 .slider-text.off {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    font-size: 14px;
-    font-weight: bold;
-    color: #00ff11;
-    text-transform: uppercase;
-    transition: .4s;
-    opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #00ff11;
+  text-transform: uppercase;
+  transition: .4s;
+  opacity: 1;
 }
 
 input:not(:checked)+.slider+.slider-text.on {
-    opacity: 0;
-    color: #ff0000;
+  opacity: 0;
+  color: #ff0000;
 }
 
 input:not(:checked)+.slider+.slider-text.off {
-    opacity: 1;
-    color: #22ff00;
+  opacity: 1;
+  color: #22ff00;
 }
 
 .slider-text.on {
-    position: absolute;
-    top: 50%;
-    left: 64.5%;
-    transform: translateY(-50%);
-    font-size: 14px;
-    font-weight: bold;
-    color: #ff0000;
-    text-transform: uppercase;
-    transition: .4s;
-    opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 64.5%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff0000;
+  text-transform: uppercase;
+  transition: .4s;
+  opacity: 1;
 }
 
 input:checked+.slider {
-    background-color: #00ff11;
+  background-color: #00ff11;
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(0px);
-    -ms-transform: translateX(50px);
-    transform: translateX(50px)
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px)
 }
 
 /* Estilos para tabelas */
 table {
-    border-collapse:unset;
-    width: 100%;
+  border-collapse: unset;
+  width: 100%;
 
-    font-size: 1rem;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.column.left {
+  order: 1;
+}
+
+.column.right {
+  order: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    order: 0;
+  }
 }
 
 /* Estilos para o texto centralizado e branco */
 .centered-text {
-    text-align: center;
+  text-align: center;
 }
 
 /* Estilo do rodapé */
@@ -226,20 +272,26 @@ footer {
   color: #ffffff;
   position: absolute;
   width: 100%;
-  padding: 2px 2px 2px 0px; /* altera a altura do footer para 100px */
+  padding: 2px 2px 2px 0px;
+  /* altera a altura do footer para 100px */
 
 }
+
+@media only screen and (max-width: 600px) {
+  /* Estilos para telas menores que 600 pixels de largura */
+}
+
 
 /* Estilos responsivos */
 @media (max-width: 350px) {
   header {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 300px) {
   header {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -248,39 +300,47 @@ footer {
     font-size: 16px;
   }
 }
+
 @media (prefers-color-scheme: dark) {
   header {
     background-color: #333;
     color: #fff;
   }
+
   body {
     background-color: #ffffff;
     color: #000000;
   }
 }
+
 @media (prefers-color-scheme: light) {
   .light-mode .dark-mode-image {
     display: none;
   }
 }
+
 @media (prefers-color-scheme: dark) {
   .dark-mode .light-mode-image {
     display: none;
   }
 }
+
 @media (max-width: 412px) {
+
   .dark-mode-image,
   .light-mode-image {
     max-width: 80px;
     max-height: 80px;
   }
 }
+
 @media (max-width: 412px) {
   header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   h1 {
     margin-bottom: 20px;
   }
@@ -299,6 +359,7 @@ footer {
     font-size: 14px;
   }
 }
+
 @media (max-width: 412px) {
   .centered-text {
     font-size: 18px;
