@@ -19,53 +19,43 @@ body {
 
 /* Alterar as cores e estilos no modo escuro */
 .dark-mode header {
-  background-color: #333;
-  ;
+  background-color: #000000;
   color: #ffffff;
-
 }
 
 .dark-mode body {
   background-color: #000000;
   color: #fff;
-
 }
 
 body.dark-mode {
   background-color: #000000;
   color: #ffffff;
-
 }
 
 /* Esconder a imagem de dark mode quando o modo claro está ativado */
 .light-mode .dark-mode-image {
-
   background-color: #333;
   max-width: 128px;
   max-height: 128px;
   display: inline-block;
-
 }
 
 /* Esconder a imagem de light mode quando o modo escuro está ativado */
 .dark-mode .light-mode-image {
-
-  background-color: #333;
+  background-color: #000000;
   max-width: 128px;
   max-height: 128px;
   display: inline-block;
-
 }
 
 /* Definir o tamanho das imagens */
-
 .dark-mode-image,
 .light-mode-image {
   display: none;
 }
 
 #dark-mode-switch {
-
   /* altura da imagem */
   padding: 0;
   /* remova o padding do botão */
@@ -78,11 +68,12 @@ body.dark-mode {
   align-items: center;
   max-width: 250px;
   /* ou outro valor que você preferir */
-  top: 17%;
+  top: 50%;
+  transform: translateY(-500%);
   position: absolute;
-  left: 70%;
+  left: 75%;
+  height: auto;
 }
-
 
 #dark-mode-switch span {
   display: inline-block;
@@ -90,10 +81,10 @@ body.dark-mode {
   color: #ffffff;
   font-size: 30px;
   white-space: nowrap;
+  height: auto;
 }
 
 /* Estilos do cabeçalho */
-
 header {
   background-color: #333;
   color: #fff;
@@ -136,7 +127,7 @@ header {
   left: 90%;
   transform: translateY(-50%);
   width: 96px;
-  height: 96px
+  height: 96px;
 }
 
 /* Estilos para o botão de alternância de tema */
@@ -144,11 +135,11 @@ header {
   position: relative;
   display: inline-block;
   width: 100px;
-  height: 50px
+  height: 50px;
 }
 
 .switch input {
-  display: none
+  display: none;
 }
 
 .slider {
@@ -162,7 +153,7 @@ header {
   border-style: solid;
   border-spacing: 0;
   border-collapse: collapse;
-  border-radius: 7px
+  border-radius: 7px;
 }
 
 .slider:before {
@@ -177,9 +168,9 @@ header {
   border-collapse: collapse;
   border-color: #000000;
   border-style: solid;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 7px
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 7px;
 }
 
 .slider-text.off {
@@ -191,16 +182,16 @@ header {
   font-weight: bold;
   color: #00ff11;
   text-transform: uppercase;
-  transition: .4s;
+  transition: 0.4s;
   opacity: 1;
 }
 
-input:not(:checked)+.slider+.slider-text.on {
+input:not(:checked) + .slider + .slider-text.on {
   opacity: 0;
   color: #ff0000;
 }
 
-input:not(:checked)+.slider+.slider-text.off {
+input:not(:checked) + .slider + .slider-text.off {
   opacity: 1;
   color: #22ff00;
 }
@@ -214,18 +205,18 @@ input:not(:checked)+.slider+.slider-text.off {
   font-weight: bold;
   color: #ff0000;
   text-transform: uppercase;
-  transition: .4s;
+  transition: 0.4s;
   opacity: 1;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: #00ff11;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(50px);
-  transform: translateX(50px)
+  transform: translateX(50px);
 }
 
 /* Estilos para tabelas */
@@ -254,6 +245,36 @@ table {
   order: 2;
 }
 
+/* Estilos para agrupar os botões em grupos de 4 em 4 em linhas diferentes */
+.tg {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tg tr:nth-child(4n + 1) {
+  clear: both;
+}
+
+.tg td {
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilos responsivos para o #dark-mode-switch */
+@media (max-width: 350) {
+  #dark-mode-switch {
+    position: absolute;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  #dark-mode-switch span {
+    font-size: 24px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -274,13 +295,11 @@ footer {
   width: 100%;
   padding: 2px 2px 2px 0px;
   /* altera a altura do footer para 100px */
-
 }
 
 @media only screen and (max-width: 600px) {
   /* Estilos para telas menores que 600 pixels de largura */
 }
-
 
 /* Estilos responsivos */
 @media (max-width: 350px) {
@@ -326,7 +345,6 @@ footer {
 }
 
 @media (max-width: 412px) {
-
   .dark-mode-image,
   .light-mode-image {
     max-width: 80px;

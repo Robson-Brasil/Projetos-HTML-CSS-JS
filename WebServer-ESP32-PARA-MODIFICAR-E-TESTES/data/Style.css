@@ -1,0 +1,139 @@
+/* Estilos para organização */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para centralização dos itens */
+.centered-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para tornar o site responsivo para mobiles */
+@media only screen and (max-width: 600px) {
+    /* Aqui você pode adicionar estilos específicos para dispositivos móveis */
+    /* Por exemplo, pode ajustar o tamanho das fontes ou a largura dos elementos */
+}
+
+/* Estilos para agrupar os botões em grupos de 4 em 4 em linhas diferentes */
+.tg {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tg tr:nth-child(4n+1) {
+    clear: both;
+}
+
+.tg td {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos adicionais */
+h4 {
+    margin: 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px; /* Aumenta a largura dos botões */
+    height: 34px; /* Aumenta a altura dos botões */
+    margin-top: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px; /* Adiciona bordas arredondadas ao botão */
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px; /* Aumenta o tamanho do círculo de alternância */
+    width: 26px; /* Aumenta o tamanho do círculo de alternância */
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%; /* Torna o círculo de alternância redondo */
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px); /* Ajusta a posição do círculo de alternância para o estado "ON" */
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider-text {
+    color: white;
+    font-size: 12px;
+    line-height: 34px; /* Centraliza verticalmente o texto dentro do botão */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+.slider-text.off {
+    right: 45px; /* Ajusta a posição do texto "OFF" */
+}
+
+.slider-text.on {
+    left: 45px; /* Ajusta a posição do texto "ON" */
+}
+
+/* Estilos adicionais de cores e fontes */ .white-text { color: white; }
+
+header { background-color: #333; padding: 20px; color: white; }
+
+.header-logo { display: flex; align-items: center; }
+
+.header-title { margin-left: 10px; }
+
+footer { background-color: #333; padding: 10px; color: white; }
+
+/* Estilos para ajustar o tamanho das imagens do logo e do botão Dark Mode / .header-logo img, #dark-mode-image, #light-mode-image { height: 30px; / Ajuste a altura desejada para as imagens */ }
+
+/* Estilos para o Dark Mode */ .dark-mode-image { display: none; }
+
+.light-mode-image { display: inline-block; }
+
+.dark-mode { background-color: #222; color: white; }
+
+/* Estilos adicionais para a tabela */ table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+
+td { padding: 10px; text-align: center; border: 1px solid #ccc; }
+
+/* Estilos para alternar as cores de fundo das linhas da tabela */ tr:nth-child(even) { background-color: #f2f2f2; }
+
+tr:nth-child(odd) { background-color: #fff; }
