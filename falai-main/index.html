@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="pt" manifest="offlinedatabase.manifest">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aumente o dinamismo durante a criação dos seus trabalhos de escola">
+    <meta name="author" content="Andeson Gomes">
+    <meta name="generator" content="Andeson Gomes">
+    <link rel="icon" href="assets/dist/img/falai-logo.png">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <title>Falaí</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="bd.js" ></script>
+
+    <style>
+
+     ul.nav.nav-pills.mb-auto::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+ul.nav.nav-pills.mb-auto::-webkit-scrollbar-track {
+    background: #cecece;
+    border-radius: 10px;
+}
+
+/* Handle */
+ul.nav.nav-pills.mb-auto::-webkit-scrollbar-thumb {
+    background: #0d6efd;
+    border-radius: 10px;
+}
+/* Handle on hover */
+ul.nav.nav-pills.mb-auto::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+      .material-icons{font-size: 16px;}
+      .col-lg-2 {
+          flex: 0 0 auto;
+          width: 17%;
+      }
+         .btn_g {
+            position: absolute;
+            bottom: 100px;
+            right: 21px;
+            z-index: 1055;
+        }
+        .btn_menu {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        bottom: 30px;
+        width: 23px;
+        right: 30px;
+      }
+      .btn_menu li {
+    background: #0d6efd;
+    margin: 5px 0px;
+    height: 4px;
+    list-style: none;
+    width: 24px;
+    border-radius: 10px;
+     cursor: pointer;
+}
+
+    .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused), .ck.ck-editor__main>.ck-editor__editable.ck-focused{
+      height: 100%;
+    position: absolute;
+    width: 100%;
+    border-bottom: 0px!important;
+    border-right: 0px!important;
+    border-left: 0px!important;
+    }
+      .ck.ck-editor {
+          border-radius: 0px!important;
+          position: absolute!important;
+          width: 83%!important;
+          height: 84%!important;
+          margin-left: 17%!important;
+          border: 0px!important;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      #txtn{background: no-repeat;
+    border: none;
+    color: #fff;
+    position: relative;
+    top: -4px;}
+      .tox-promotion {
+          display: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        
+      }
+
+      @media (max-width: 768px) {
+
+        .btn_menu {display: block;!important;}
+
+        .sidebar {
+            padding: 0px;
+            top: 0rem!important;
+            width: 100%;
+        }
+        .ck.ck-editor {
+            width: 100%!important;
+            margin-left: 0%!important;
+            }
+      }
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .both{
+        clear: both;
+      }
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .dropdown.config strong {
+            color: #fff;
+        }
+      .dropdown.config {
+          position: absolute;
+          right: 22px;
+          bottom: 50px;
+          padding: 4px 11px;
+          font-size: 21px;
+          border-radius: 35px;
+          background: #0d6efd;
+          z-index: 1055;
+      }
+      .dropdown.config .dropdown-toggle::after {
+            display: none;
+        }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .txti{
+       white-space: nowrap;
+    width:75%;;
+    margin-right: 8px;
+    float: left;
+    overflow: hidden;
+    text-overflow: inherit;
+      }
+      
+      /*.jn {
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    display: inline-block;
+    border-radius: 100%;
+    cursor: pointer;
+    }
+    .sidebar {
+        background: #fff;
+      }
+    /*.min {
+    background: #12fb12;
+    }
+
+    .max {
+    background: #ffd900;
+    }
+    .fech {
+    background: red;
+    }
+
+    .botfch {
+    margin-right: 11px;
+    }*/
+    .navbar-toggler {
+    border: none!important;
+    }
+    .navbar-toggler-icon {
+    width: 1.1em;
+    height: 1.1em;
+    }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+     <!-- Custom styles for this template -->
+    <link href="modals.css" rel="stylesheet">
+  </head>
+  <body class="" onload="onInit()">
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <div class="d-flex flex-column flex-shrink-0 p-3" style="height: 100%;" >
+         <a href="#" id="add" class="nav-link active" style="border: 1px solid #acacac;color:#acacac;border-radius: 6px;padding: 5px 7px;">
+         <i class="material-icons" style="float: left;font-size: 23px; margin-top: 1px;margin-right:2px ;">add_circle</i>
+          <span style="margin-top: 2px;">Novo documento</span>
+        </a>
+    <hr>
+    <ul id="trss" class="nav nav-pills mb-auto" style="
+    overflow: auto;padding: 0px 6px;
+">
+      
+
+
+    </ul>
+    <hr>
+    <div class="dropdown perfils">
+      <a href="#"  style="width: 50%;" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="assets/dist/img/abg.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>Anderson Gomes</strong>
+      </a>
+      <ul class="dropdown-menu text-small shadow">
+        <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCEnG8D3dlnm9Q_-_b8e3aMA" target="_blank"><img src="assets/dist/img/youtube.png" style="width: 20px;"> @andesobgomes</a></li>
+        <li><a class="dropdown-item" href="#" target="_blank"><img src="assets/dist/img/github.png" style="width: 20px;"> @andesobgomes</a></li>
+        <li><a class="dropdown-item" href="https://web.facebook.com/andersob.gomes" target="_blank"><img src="assets/dist/img/facebook.png" style="width: 20px;"> @andersob.gomes</a></li>
+        <li><a class="dropdown-item" href="https://www.instagram.com/andersob.gomes/" target="_blank"><img src="assets/dist/img/instagram.png" style="width: 20px;"> @andersob.gomes</a></li>
+        <li><a class="dropdown-item" href="https://www.tiktok.com/@andersob.gomes" target="_blank"><img src="assets/dist/img/tiktok.png" style="width: 20px;"> @andersob.gomes</a></li>
+        <li><a class="dropdown-item" href="https://www.linkedin.com/in/anderson-gomes-738b80146/" target="_blank"><img src="assets/dist/img/linkedin.png" style="width: 20px;"> @anderson-gomes</a></li>
+      </ul>
+    </div>
+
+     
+  </div>
+    </nav>
+
+    <main class="" style="padding: 0px;">
+      <form>
+        <input type="hidden" name="id" value="">
+        <div id="editor"></div>
+
+      </form>
+
+
+      <div class="dropdown config">
+      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <strong><i class="fa fa-cog"></i></strong>
+      </a>
+      <ul class="dropdown-menu text-small shadow">
+        <li><a class="dropdown-item" href="#"><b>Modo Noturno</b></a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Menu: <div class="form-check form-switch" style="float: right;font-size: 20px;cursor: pointer;"><input class="form-check-input" type="checkbox" name="menu" style="cursor: pointer;" role="switch" id="flexSwitchCheckChecked" ></div></a></li>
+      </ul>
+    </div>
+    </main>
+  </div>
+</div>
+
+<div class="mdl">
+  <div class="modal fade" id="elimn" tabindex="-1" aria-labelledby="elimnlabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+  <div class="modal-dialog" style="width: 325px;margin-top: 100px;">
+    <div class="modal-content rounded-3 shadow">
+      <form id="eliminar">  
+      <div class="modal-body p-4 text-center">
+        <h5 class="mb-0">Deletar documento?</h5>
+        <p class="mb-0">Você não poderá refazer esta acção.</p>
+        <input type="hidden" name="idel">
+      </div>
+      <div class="modal-footer flex-nowrap p-0">
+        <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-end" data-bs-dismiss="modal"> Calncelar</button>
+        <button type="submit" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0" style="color: red;"><strong>Sim, Deletar</strong></button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="btn_menu"  data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"><li></li><li></li><li></li></span>
+</div>
+
+<div class="btn_g">
+  <div class="btn_start" style="background: #0d6efd;font-size: 20px;padding: 5px 12px;border-radius: 26px;color: #fff;cursor: pointer;"><i class="fa fa-play-circle-o"></i></div>
+</div>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/jquery.min.js"></script>
+
+    <script src="assets/dist/js/ckeditor5/ckeditor.js"></script>
+
+  <script src="dashboard.js"></script>
+  <script type="text/javascript">
+    var edt;
+  ClassicEditor
+    .create( document.querySelector( '#editor' ), {
+      // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+    } )
+    .then( editor => {
+      window.editor = editor;
+      edt = editor;
+    } )
+    .catch( err => {
+      console.error( err.stack );
+    } );
+
+    </script>
+    <script src="assets/dist/js/funcoes.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         let gravando = false;
+          const voz = new webkitSpeechRecognition();
+          voz.lang = 'pt-pt';
+          voz.continuous = true;
+
+           
+
+          voz.onresult = event => {
+          const txt = event.results[event.results.length - 1][0].transcript;
+           var conteudoAtual = edt.getData();
+           var nvctd = conteudoAtual+''+UpFirstPalvra(txt)+'.';
+           edt.setData(nvctd);
+           edt.focus();
+         
+        }
+
+          voz.onerror = event => {
+          console.error(event.error);
+        }
+
+
+              function UpFirsletra(texto) {
+              return texto.charAt(0).toUpperCase() + texto.slice(1);
+              }
+
+          function UpFirstPalvra(texto) {
+          const firstWordEndIndex = texto.indexOf(' ');
+          if (firstWordEndIndex === -1) {
+          // A string possui apenas uma palavra
+          return UpFirsletra(texto);
+          } else {
+          // A string possui mais de uma palavra
+          const firstWord = texto.slice(0, firstWordEndIndex);
+          const restOfSentence = texto.slice(firstWordEndIndex + 1);
+          return UpFirsletra(firstWord) + ' ' + restOfSentence;
+          }
+          }
+
+        $('.btn_g').click(function(){
+          if(!gravando){
+            $('.btn_g').html('<div class="btn_stop" style="background: red;font-size: 20px;padding: 5px 12px;border-radius: 26px;color: #fff;cursor: pointer;"><i class="fa fa-stop-circle-o"></i></div>');
+            gravando = true;
+             voz.start();
+             edt.focus();
+          }else{
+             $('.btn_g').html('<div class="btn_start" onclick="start()" style="background: #0d6efd;font-size: 20px;padding: 5px 12px;border-radius: 26px;color: #fff;cursor: pointer;"><i class="fa fa-play-circle-o"></i></div>');
+            gravando = false;
+            voz.stop();
+
+          }
+        });
+
+            // Seleciona o elemento com a classe ck-editor__editable
+          const ckEditor = document.querySelector('.ck-editor__editable');
+
+          // Cria um novo observador
+          const observer = new MutationObserver(function(mutations) {
+          // Executa a função para gerar o alerta
+          var idtxt = $('input[name=id]').val(), addtxt = edt.getData();
+            
+              if(!mexendo){
+                //verifica se o campo input está vazio
+                if(idtxt == ''){
+
+                  var tt = criatxt();
+                  addtrb(tt, addtxt);
+                  untrtt(tt);
+                  $('.tititulo').html(tt);
+                }else{
+                  edttxt(addtxt, idtxt)
+                }
+              }
+          
+
+          });
+
+          // Configura o observador para observar mudanças no conteúdo do elemento selecionado
+          const config = { childList: true, subtree: true };
+          observer.observe(ckEditor, config);
+        
+          
+
+
+      </script>
+       
+  </body>
+</html>

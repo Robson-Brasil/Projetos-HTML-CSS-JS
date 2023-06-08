@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minha Dashboard Local</title>
+    <!-- Incluir links para Bootstrap CSS e fontawesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Incluir link de tabledit.css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.25/r-2.2.9/datatables.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Minha Dashboard Local</h1>
+        <h2>Leituras dos Sensores</h2>
+        <table id="table" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Data e Hora</th>
+                    <th>Temperatura</th>
+                    <th>Umidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados do sensor de temperatura e umidade podem ser exibidos nesta seção -->
+            </tbody>
+        </table>
+
+        <h2>Controle dos Relés</h2>
+        <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary status-btn">
+                <input type="checkbox" id="relay1"><span>Relé 1</span>
+            </label>
+            <label class="btn btn-primary status-btn">
+                <input type="checkbox" id="relay2"><span>Relé 2</span>
+            </label>
+            <label class="btn btn-primary status-btn">
+                <input type="checkbox" id="relay3"><span>Relé 3</span>
+            </label>
+            <!-- adiciona mais botões toggle para cada um dos relés -->
+        </div>
+
+    </div>
+
+    <!-- Incluir links para bibliotecas JavaScript (Bootstrap, Chart.js e tabledit.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/chart.min.js"></script>
+    <!-- Incluir link de tabledit.js -->
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.25/r-2.2.9/datatables.min.js"></script>
+
+    <!-- Seu código JavaScript personalizado pode ser incluído nesta seção -->
+    <script src="myscript.js"></script>
+</body>
+
+</html>

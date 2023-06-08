@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+      /* Para garantir que a altura do corpo ocupe toda a tela */
+    background-image: url("IoT.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
+.logo {
+    max-height: 100px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #060606;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(130, 130, 130);
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #ffffff;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+}
+
+.switch-row {
+    display: flex;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 20px;
+}
+
+.switch-button {
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.button-name {
+    margin-top: -25px;
+}
+
+.switch-button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider-button {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff0000;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider-button:before {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    left: 5px;
+    bottom: 5px;
+    background-color: rgb(0, 0, 0);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider-button {
+    background-color: #11ff00;
+}
+
+input:checked+.slider-button:before {
+    transform: translateX(35px);
+}
+
+.slider-button.round {
+    border-radius: 50px;
+}
+
+.slider-button.round:before {
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: #000000;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #5c5c5c;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 480px) {
+    .switch-container {
+        padding: 5rem;
+    }
+
+    .dark-mode-switch {
+        width: 45px;
+        height: 25px;
+    }
+
+    .dark-mode-switch .slider {
+        width: 45px;
+        height: 25px;
+    }
+
+    .dark-mode-switch .slider:before {
+        height: 21px;
+        width: 21px;
+    }
+
+    .dark-mode-switch input:checked + .slider:before {
+        transform: translateX(20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .switch-container {
+        padding: 2rem;
+    }
+
+    .switch-row {
+        flex-direction: column;
+    }
+
+    .dark-mode-switch {
+        width: 20px;
+        height: 10px;
+    }
+
+    .dark-mode-switch .slider {
+        width: 20px;
+        height: 10px;
+    }
+
+    .dark-mode-switch .slider:before {
+        height: 3px;
+        width: 3px;
+    }
+
+    .dark-mode-switch input:checked + .slider:before {
+        transform: translateX(5px);
+    }
+}
